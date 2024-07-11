@@ -677,13 +677,13 @@ def display_counterfactual_for_sentiment_analysis(
         if user_knowledge_level == KnowledgeLevel.Advanced:
 
             # Additional explanation for knowledge level "Advanced"
-            # Display the most important key words of the original input text,
+            # Display the most important keywords of the original input text,
             # that were identified to be most important for the sentiment label and
             # therefore for the counterfactual generation
 
             key_words_list = [word.strip() for word in cf_key_words.split(",")]
             cf_key_words_html = tagger_component(
-                "<b>Key words:</b>",
+                "<b>Keywords:</b>",
                 key_words_list,
                 color_name=["blue" for _ in key_words_list],
             )
@@ -696,9 +696,21 @@ def display_counterfactual_for_sentiment_analysis(
         elif user_knowledge_level == KnowledgeLevel.Expert:
 
             # Additional explanations for knowledge level "Expert"
-            # Display the most important key words and latent features of the original input text,
+            # Display the most important keywords and latent features of the original input text,
             # that were identified to be most important for the sentiment label and
             # therefore for the counterfactual generation
+
+            key_words_list = [word.strip() for word in cf_key_words.split(",")]
+            cf_key_words_html = tagger_component(
+                "<b>Keywords:</b>",
+                key_words_list,
+                color_name=["blue" for _ in key_words_list],
+            )
+            st.markdown(cf_key_words_html, unsafe_allow_html=True)
+            st.markdown(
+                f"<small>These keywords are the words associated with the latent features and therefore influential for the '<i>{sentiment_label}</i>' prediction.</small>",
+                unsafe_allow_html=True,
+            )
 
             latent_features_list = [
                 word.strip() for word in cf_latent_features.split(",")
@@ -711,18 +723,6 @@ def display_counterfactual_for_sentiment_analysis(
             st.markdown(cf_latent_features_html, unsafe_allow_html=True)
             st.markdown(
                 "<small>These latent features are hidden patterns and concepts within the text that help the model understand and predict the sentiment more accurately.</small>",
-                unsafe_allow_html=True,
-            )
-
-            key_words_list = [word.strip() for word in cf_key_words.split(",")]
-            cf_key_words_html = tagger_component(
-                "<b>Key words:</b>",
-                key_words_list,
-                color_name=["blue" for _ in key_words_list],
-            )
-            st.markdown(cf_key_words_html, unsafe_allow_html=True)
-            st.markdown(
-                f"<small>These key words are the words associated with the latent features and therefore influential for the '<i>{sentiment_label}</i>' prediction.</small>",
                 unsafe_allow_html=True,
             )
 

@@ -1,10 +1,12 @@
-# Customized GenXAI
+# Personalized GenXAI
 
-This project is part of a Bachelor thesis aimed at developing a prototype for customized explanations of generative artificial intelligence (GenXAI). This README provides an overview of the project, installation instructions and other essential information.
+This project is part of a Bachelor thesis aimed at developing a prototype for personalized explanations of generative artificial intelligence (GenXAI). This README provides an overview of the project, installation instructions and other essential information.
+
+![Screenshot of the prototype](img/Screenshot-Prototype.png)
 
 ## Project Overview
 
-The prototype is designed to facilitate easy interaction with customized GenAI explanations. The interface allows users to input text, let a model make a prediction, and get customized explanations for the prediction. The customization refers to the users name and knowledge level of XAI in general. 
+The prototype is designed to facilitate easy interaction with personalized GenAI explanations. The interface allows users to input text, let a model make a prediction, and get personalized explanations for the prediction. The personalization refers to the users name and knowledge level of XAI in general. 
 
 The prototype currently supports two types of GenAI model inference:
 - Sentiment Analysis
@@ -25,8 +27,8 @@ Before installing the project, ensure you have the following prerequisites:
 
 1. Clone the repository
 ```
-git clone https://github.com/JAYJKB/Customized-GenXAI.git
-cd Customized-GenXAI
+git clone https://github.com/JAYJKB/Personalized-GenXAI.git
+cd Personalized-GenXAI
 ```
 
 2. Create & activate a virtual environment
@@ -69,4 +71,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 Special thanks to my advisors, Anne Hüsges & Florian Leiser, and the Karlsruher Institute of Technology (KIT) for their support and guidance.
 
-Feel free to open an issue or contact me if you have any questions or need further assistance.
+Feel free to open an issue or contact me at urkhx@student.kit.edu if you have any questions or need further assistance.
