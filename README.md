@@ -2,7 +2,8 @@
 
 This project is part of a Bachelor thesis aimed at developing a prototype for personalized explanations of generative artificial intelligence (GenXAI). This README provides an overview of the project, installation instructions and other essential information.
 
-![Screenshot of the prototype](img/Screenshot-Prototype.png)
+![Screenshot of the prototype - 1](img/Screenshot-Prototype-1.png)
+![Screenshot of the prototype - 2](img/Screenshot-Prototype-2.png)
 
 ## Project Overview
 
