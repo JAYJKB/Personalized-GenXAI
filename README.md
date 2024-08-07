@@ -18,6 +18,8 @@ The prototype currently supports two types of GenAI model inference:
 
 ## Installation
 
+This installation guide covers the prototype setup on Windows.
+
 ### Prerequisites
 
 Before installing the project, ensure you have the following prerequisites:
